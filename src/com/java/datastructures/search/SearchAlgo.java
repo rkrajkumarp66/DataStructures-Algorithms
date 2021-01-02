@@ -1,4 +1,4 @@
-package com.java.datastructures;
+package com.java.datastructures.search;
 
 public class SearchAlgo {
 
@@ -42,9 +42,8 @@ public class SearchAlgo {
 			}
 			if (inputArray[mid] < keyToSearch) {
 				first = mid + 1;
-			} else {
+			} else
 				last = mid - 1;
-			}
 			return binarySearch(inputArray, first, last, keyToSearch);
 		}
 		return -1;
