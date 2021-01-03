@@ -6,7 +6,7 @@ public class ArrayPrefixSum {
 
 	public static void main(String[] args) {
 		int[] inputArray = { 1, -2, 1, 4, 5 };
-		int[] inputArray1 = { 1, -2, 3, 7, 6 };
+		int[] inputArray1 = { 2, -2, 3, 7, 6 };
 		findArrPrefixSum(inputArray);
 		if (findArrPrefixSumZeroNormal(inputArray)) {
 			System.out.println("Found Prefix Sum Zero");
@@ -33,6 +33,7 @@ public class ArrayPrefixSum {
 
 	public static boolean findArrPrefixSumZeroNormal(int[] inputArray) {
 		int[] prefixSum = new int[inputArray.length];
+		;
 		prefixSum[0] = inputArray[0];
 		for (int i = 1; i < inputArray.length; i++) {
 			prefixSum[i] = prefixSum[i - 1] + inputArray[i];
