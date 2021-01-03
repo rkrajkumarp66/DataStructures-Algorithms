@@ -5,7 +5,7 @@ public class SearchAlgo {
 	public static void main(String[] args) {
 		int[] inputArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		int keyToSearch = 6;
-		System.out.println("recursiveLinearSearch");
+		System.out.println("recursiveLinearSearchs");
 		int indexResult = recursiveLinearSearch(inputArray, 0, keyToSearch);
 		
 		if (indexResult == -1) {
