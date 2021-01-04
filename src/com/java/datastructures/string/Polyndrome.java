@@ -14,13 +14,6 @@ public class Polyndrome {
 
 	}
 	public static boolean checkPolyndrome(String inputString) {
-		 /*// convert input string to char array 
-        char tempArray[] = inputString.toCharArray(); 
-          
-        // sort tempArray 
-        Arrays.sort(tempArray); 
-        inputString = new String(tempArray);
-        System.out.println("inputString:"+inputString);*/
 		int n = inputString.length();
 		for(int i=0;i<n/2;i++) {
 			if(inputString.charAt(i)!=inputString.charAt(n-i-1)) {
